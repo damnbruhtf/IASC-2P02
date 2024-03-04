@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Assignment 1</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- three.js importmap -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://ga.jspm.io/npm:three@0.158.0/build/three.module.js",
+                "OrbitControls": "https://ga.jspm.io/npm:three@0.158.0/examples/jsm/controls/OrbitControls.js",
+                "lil-gui": "https://ga.jspm.io/npm:lil-gui@0.19.1/dist/lil-gui.esm.js"
+            }
+        }
+    </script>
+
+    <!-- three.js scene -->
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <h1>Interactive Essay</h1>
+    <h2>Ekraj Narang</h2>
+
+    <!-- part one -->
+    <section id="part-one">
+        <h2>1. Flatness</h2>
+
+        <p>Imagine being stuck in a movie theatre forever, only seeing flickering shadows on the screen. That is the life of a prisoner in Plato's cave story. Chained up, facing a wall, all they see are weird, moving shapes. They have no idea what is causing them, but they believe these shadows are the real deal, the divine.  The prisoners are giving these shadows names, putting them on a pedestal. They may call the shadow of a dog a "barking monster" because that is what they know with their limited knowledge. This limited and narrowed is referred to by a scholar Nick Sousanis as "Flatness". It is like seeing the world in a flat picture. There is no depth or complexity. These cave dwellers are stuck in a Flatland because they only have access to this two-dimensional view of reality. Their minds cannot comprehend the light that creates these shadows, albeit the world outside the cave with all its sunshine, trees, and actual dogs. Envision it like this: using only their eyes, like watching a silent movie, they do not get the full picture because they cannot hear the sounds or feel the textures that would give them a more complete understanding. They are prisoners of a flat, one-sided prison that is their version of reality.
+             All of a sudden <span class="clickable" id="first-change">the object began to move strangely</span>.</p>
+
+        <p>In the story, one prisoner escapes. He stumbles out of the cave, blinded by the actual sun, and slowly starts to see things in the third dimension for the first time. He experiences the world like it truly is, not just shadows on the wall. This journey from Flatland to a fuller picture is exactly what Sousanis talks about - moving beyond the limited perspectives to see the richness and complexity of everything around us. So, the next time you feel like you are seeing only one side of the story, think of the cave prisoners. Do not get stuck in Flatland. Explore different viewpoints, question assumptions, seek answers and take a step outside your comfort zone. In doing so, you might just escape the cave and see the world in in own true light. And then, <span class="clickable" id="second-change">the object fell off the face of the earth</span>.</p>
+
+        <p><span class="clickable" id="continue-reading">Continue reading</span></p>
+    </section>
+
+    <!-- part two -->
+    <section id="part-two" class="hidden">
+        <h2>2. Seeing Double</h2>
+
+        <p>Imagine being confined to a cave, with your only view of the world outside limited to shadows flickering on a wall. This is the reality for the prisoners in Plato's Allegory of the Cave, who mistake these shadows for the true essence of the world. They are trapped in a two-dimensional (2D) understanding of reality, unable to perceive the depth and complexity of the world outside. Nick Sousanis, in his graphic novel "Unflattening," introduces the concept of "seeing double." This concept urges us to transcend our limited viewpoints and embrace diverse perspectives to gain a more comprehensive understanding of the world. It is about acknowledging the value of both detailed analysis and broader context in shaping our understanding of reality. In the allegory, one prisoner escapes the cave and experiences the world in three dimensions (3D) for the first time. This journey from 2D to 3D represents the transition from a limited, fragmented understanding to a more holistic perspective. It is a reminder that our understanding of the world is shaped by our perspectives and experiences, and by embracing diverse viewpoints, we can enrich our understanding and appreciation of the world around us. But then, <span class="clickable" id="third-change">the object came to rest</span>.</p>
+
+        <p>The concept of "seeing double" is particularly relevant in today's interconnected world, where we are constantly bombarded with information from multiple sources. It is easy to get caught up in our perspectives and overlook the value of alternative viewpoints. However, by actively seeking out diverse perspectives, we can gain a more nuanced understanding of complex issues and foster empathy and understanding among different groups. Moreover, "seeing double" encourages us to recognize the limitations of our perspectives. Just as the prisoners in the cave could only see the shadows on the wall, we too are limited by our own experiences and biases. By acknowledging these limitations and actively seeking out alternative viewpoints, we can gain a more comprehensive understanding of the world. In conclusion, "seeing double" is a powerful concept that reminds us of the importance of embracing diverse perspectives in shaping our understanding of the world. By transcending our limited viewpoints and actively seeking out diverse perspectives, we can gain a more comprehensive understanding of the world and enrich our lives in the process. As Sousanis eloquently puts it, "We are more than what we can see – we are the sum of our many perspectives." And then, <span class="clickable" id="fourth-change">the sun began to set behind it,</span> mystifying the people in the cave.</p>
+
+        <p><span class="clickable" id="restart">Restart</span></p>
+    </section>
+
+    <canvas class="webgl"></canvas>
+</body>
