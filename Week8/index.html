@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<head>
+    <title>3D Portfolio</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- three.js importmap -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://ga.jspm.io/npm:three@0.158.0/build/three.module.js",
+                "OrbitControls": "https://ga.jspm.io/npm:three@0.158.0/examples/jsm/controls/OrbitControls.js",
+                "lil-gui": "https://ga.jspm.io/npm:lil-gui@0.19.1/dist/lil-gui.esm.js",
+                "GLTFLoader": "https://ga.jspm.io/npm:three@0.158.0/examples/jsm/loaders/GLTFLoader.js"
+            }
+        }
+    </script>
+
+    <!-- three.js -->
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <!-- canvas -->
+    <canvas class="webgl"></canvas>
+
+    <!-- splash --> 
+    <section class="splash">
+        <h1>Ekraj Narang</h1>
+    </section>
+
+    <!-- content -->
+    <section class="content" id="first">
+        <h1>About me</h1>
+        <p>My name is Ekraj. Currently enrolled in IASC at Brock. I want to pursue a career as a game designer. Being a 3D artist, my speciality is horror environments and levels. Other than 3D modelling, I also play the guitar and play football (soccer). Excited for the future and looking forward to where time takes us!
+
+</p>
+        <p><span class="clickable" id="click1">View projects</span></p>
+    </section>
+
+    <section class="content hidden" id="second">
+        <h1>Interactive Essay</h1>
+        <p>This model highlights the concept of emptiness within everyone. The lights highlight the emptiness in the void, showing complex thoughts that go on in our minds, it is almost chaotic. Chaos, however, can be beautiful. The randomness in its sequences make it so that everything is a blur. Perspective can however be changed.</p>
+        <p><span class="clickable" id="click2">Next project</span></p>
+    </section>
+
+    <section class="content hidden" id="third">
+        <h1>Data Visualization</h1>
+        <p>As mentioned in my introduction, I love making horror models. Ever since I was a young boy, the paranormal and dark has piqued my curiosity. Over the years, it started feeling like home. Transcendent from movies to series, podcasts, games and so on, the mysterious is inviting. Looking beyond the scope of the "living", the paranormal has always felt like a puzzle, waiting to be solved.</p>
+        <p><span class="clickable" id="click3">Back to Home</span></p>
+    </section>
+
+    <section class="footer">
+        <p>Skull Girl <a href="https://sketchfab.com/3d-models/skull-girl-94ae7c555d864e26894d66db01643825" target="_blank">View on Sketchfab</a>.</p>
+    </section>
+</body>
