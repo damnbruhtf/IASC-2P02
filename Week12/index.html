@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Data Visualization Assignment</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- three.js importmap -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://ga.jspm.io/npm:three@0.158.0/build/three.module.js",
+                "OrbitControls": "https://ga.jspm.io/npm:three@0.158.0/examples/jsm/controls/OrbitControls.js",
+                "lil-gui": "https://ga.jspm.io/npm:lil-gui@0.19.1/dist/lil-gui.esm.js"
+            }
+        }
+    </script>
+
+    <!-- dataviz 1 -->
+    <script src="script.js" type="module"></script>
+
+    <!-- dataviz 2 -->
+    <script src="script2.js" type="module"></script>
+</head>
+<body>
+    <h1>Data Visualization for Angel & Demons </h1>
+    <h2>Ekraj Singh Narang </h2>
+
+    <p>In Angels and Demons, symbologist Robert Langdon is thrust into a high-stakes race against time. The story begins with the murder of a physicist at CERN, the European Organization for Nuclear Research. Branded on the victim's chest is a symbol: an ambigram of the word "Illuminati," an ancient secret society thought to be long gone. Langdon, an expert on the Illuminati, is called in to investigate. He soon learns the shocking truth: a stolen canister of antimatter, a recently discovered and incredibly destructive substance, is on a 24-hour timer to explode. The target? Vatican City. Meanwhile, the College of Cardinals is preparing for the Conclave, the process of electing a new Pope. Four prominent cardinals, considered frontrunners, are kidnapped. Langdon, alongside Vittoria Vetra, the murdered physicist's adopted daughter and a CERN physicist herself, realizes the kidnappings and the antimatter threat are linked. The Illuminati, it seems, have resurfaced and are targeting the Vatican. Langdon believes they plan to kill the kidnapped cardinals in a series of elaborate rituals, each mirroring the "Path of Illumination," a historical scientific enlightenment movement with ties to the Illuminati. A frantic chase ensues across Rome. Langdon and Vittoria race against time, deciphering clues hidden in ancient churches, forgotten tombs, and even the Vatican archives. Each clue, often linked to Bernini sculptures or Renaissance art, points them to the next cardinal's location and the next step in the Illuminati's deadly plan.
+        
+    
+         </p>
+
+    <p>As they unravel the mystery, Langdon and Vittoria face a web of intrigue. The leader of the Illuminati, who goes by the alias "Janus," seems to have infiltrated the highest ranks of the Church. The line between science and faith blurs, with the Illuminati challenging the Church's authority and questioning the existence of God. Throughout their pursuit, Langdon and Vittoria encounter danger at every turn. They are pursued by the police, who believe Langdon to be involved in the kidnappings, and a mysterious assassin known only as "the Hassassin." With each revelation, the stakes climb higher. Langdon discovers a shocking truth: the stolen antimatter canister is not a weapon, but a key. It unlocks a hidden chamber beneath the Vatican, a chamber that holds the Illuminati's true target – a powerful scientific discovery capable of shaking the very foundations of the Church. In a heart-pounding climax, Langdon and Vittoria confront the leader of the Illuminati, revealing a shocking twist – Janus is not who they expected.  The true villain's motives are rooted in a deep-seated grudge against the Church, fueled by a personal tragedy. In the final act, Langdon and Vittoria manage to prevent the destruction of the Vatican and expose the true mastermind behind the plot. However, the novel doesn't shy away from the complex relationship between science and religion. The discovery within the hidden chamber presents a profound challenge to the Church's beliefs, leaving a lasting impact on the institution and its future. In the first visualization, I will draw comparison between the Illuminati, the Church and Archives. </p>
+
+    <!-- dataviz 1 -->
+    <div class="canvas-container">
+        <h2>Objects in Angels & Demons</h2>
+        <!--
+        <ul>
+            <li id="red">illuminati</li>
+            <li id="green">Church</li>
+            <li id="blue">Archives</li>
+        </ul>
+    -->
+        <canvas class="webgl"></canvas>
+        <div id="parent1"></div>
+        <p>Left click and drag to rotate. Right click and drag to move. Scroll to zoom.</p>
+    </div>
+
+    <p>For the second visualization, I will be comparing the characters that come form the narrative: Langdon, Kohler and Vetra. Death reigns in Angels and Demons. It's not just the end, but a weapon wielded by the Illuminati in their murderous rituals. This constant threat underscores death's power and its manipulation by fanatics. Hell isn't a fiery underworld, but the chaos and destruction the Illuminati unleash create a hellish reality. </p>
+
+    <p>The potential explosion and kidnappings evoke a sense of fear and devastation. Faith faces a complex challenge. The Illuminati question God's existence and challenge Church teachings with potential scientific discoveries. This creates a crisis of faith, but the novel doesn't dismiss faith entirely. Langdon, despite his scholarly focus, remains intrigued by faith's expressions. The book suggests faith and science can coexist, but their potential clash creates tension.</p>
+
+    <!-- dataviz 2 -->
+    <div class="canvas-container">
+        <h2>characters</h2>
+        <canvas class="webgl2"></canvas>
+        <div id="parent2"></div>
+        <p>Left click and drag to rotate. Right click and drag to move. Scroll to zoom.</p>
+    </div>
+
+    <p> </p>
+    
+</body>
