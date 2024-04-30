@@ -20,7 +20,7 @@ const canvas = document.querySelector('.webgl2')
 
 // Scene
 const scene = new THREE.Scene()
-scene.background = new THREE.Color('gray')
+scene.background = new THREE.Color('antiquewhite')
 
 // Camera
 const camera = new THREE.PerspectiveCamera(
@@ -54,33 +54,33 @@ scene.add(directionalLight)
 ** MESHES **
 ************/
 // Sphere Geometry
-const sphereGeometry = new THREE.SphereGeometry(0.5)
+const coneGeometry = new THREE.ConeGeometry( .5 , .5 , 3);
 
 // Sphere Materials
 const orangeMaterial = new THREE.MeshStandardMaterial({
-    color: new THREE.Color('orange')
+    color: new THREE.Color('#2ac200')
 })
 const pinkMaterial = new THREE.MeshStandardMaterial({
-    color: new THREE.Color('pink')
+    color: new THREE.Color('#cf1800')
 })
 const aquaMaterial = new THREE.MeshStandardMaterial({
-    color: new THREE.Color('aqua')
+    color: new THREE.Color('#38eeff')
 })
 
 const drawSphere = (i, material) =>
 {
-    const sphere = new THREE.Mesh(sphereGeometry, material)
-    sphere.position.x = (Math.random() - 0.5) * 10
-    sphere.position.z = (Math.random() - 0.5) * 10
-    sphere.position.y = i - 10
+    const cone = new THREE.Mesh(coneGeometry, material)
+    cone.position.x = (Math.random() - 0.5) * 10
+    cone.position.z = (Math.random() - 0.5) * 10
+    cone.position.y = i - 10
 
-    sphere.rotation.x = Math.random() * 2 * Math.PI
-    sphere.rotation.y = Math.random() * 2 * Math.PI
-    sphere.rotation.z = Math.random() * 2 * Math.PI
+    cone.rotation.x = Math.random() * 2 * Math.PI
+    cone.rotation.y = Math.random() * 2 * Math.PI
+    cone.rotation.z = Math.random() * 2 * Math.PI
 
-    sphere.randomizer = Math.random()
+    cone.randomizer = Math.random()
 
-    scene.add(sphere)
+    scene.add(cone)
 }
 
 
@@ -92,9 +92,9 @@ let preset = {}
 const uiobj = {
     text: '',
     textArray: [],
-    term1: 'Kohler',
-    term2: 'Langdon',
-    term3: 'Vetra',
+    term1: 'earth',
+    term2: 'fire',
+    term3: 'wind',
     rotateCamera: false,
     animateBubbles: false
 }
@@ -144,7 +144,7 @@ const findTermInParsedText = (term, material) =>
 }
 
 // Load source text
-fetch("https://raw.githubusercontent.com/amephraim/nlp/master/texts/J.%20K.%20Rowling%20-%20Harry%20Potter%201%20-%20Sorcerer's%20Stone.txt")
+fetch('https://raw.githubusercontent.com/damnbruhtf/IASC-2P02/main/Angels%20%26%20Demons%20-%20Dan%20Brown.txt')
     .then(response => response.text())
     .then((data) =>
     {
@@ -160,23 +160,23 @@ const ui = new dat.GUI({
 
 // Interaction Folders
     // spheres Folder
-    const spheresFolder = ui.addFolder('Filter Terms')
+    const conesFolder = ui.addFolder('Filter Terms')
 
-    spheresFolder
+    conesFolder
         .add(orangeMaterial, 'visible')
         .name(`${uiobj.term1}`)
 
-    spheresFolder
+        conesFolder
         .add(pinkMaterial, 'visible')
         .name(`${uiobj.term2}`)
 
-    spheresFolder
+        conesFolder
         .add(aquaMaterial, 'visible')
         .name(`${uiobj.term3}`)
 
-    spheresFolder
+        conesFolder
         .add(uiobj, 'animateBubbles')
-        .name('Animate Bubbles')
+        .name('Animate Cones')
 
     // Camera Folder
     const cameraFolder = ui.addFolder('Camera')
@@ -213,8 +213,8 @@ const animation = () =>
         {
             if(scene.children[i].type === "Mesh")
             {
-                scene.children[i].scale.x = Math.sin(elapsedTime * scene.children[i].randomizer)
-                scene.children[i].scale.y = Math.sin(elapsedTime * scene.children[i].randomizer)
+                scene.children[i].rotation.x = Math.sin(elapsedTime * 0.5 * 6 * scene.children[i].randomizer)
+                scene.children[i].rotation.y = Math.sin(elapsedTime * 0.5 * 6 * scene.children[i].randomizer)
                 scene.children[i].scale.z = Math.sin(elapsedTime * scene.children[i].randomizer)
             }
         }

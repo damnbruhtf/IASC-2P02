@@ -2,16 +2,18 @@
 body {
     margin: 0 auto;
     width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
+    background-color: antiquewhite;
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Headers */
 h1, h2 {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -45,15 +47,15 @@ ul > li {
 }
 
 #red {
-    color: red;
+    color: #ECA72C;
 }
 
 #green {
-    color: green;
+    color: #ff0000;
 }
 
 #blue {
-    color: blue;
+    color: #6EEB83;
 }
 
 /* UI */
@@ -70,25 +72,25 @@ ul > li {
 }
 
 #lil-gui-name-1  {
-    color: red;
+    color: #ECA72C;
 }
 
 #lil-gui-name-2  {
-    color: green;
+    color: #95B2B8;
 }
 
 #lil-gui-name-3  {
-    color: blue;
+    color: #6EEB83;
 }
 
 #lil-gui-name-5 {
-    color: orange;
+    color: #0d7400;
 }
 
 #lil-gui-name-6 {
-    color: pink;
+    color: #e48303;
 }
 
 #lil-gui-name-7 {
-    color: aqua;
+    color: #28c2ff;
 }
